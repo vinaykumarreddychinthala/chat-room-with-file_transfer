@@ -105,7 +105,7 @@ class ClientApp:
         try:
             temp_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             temp_socket.settimeout(10) 
-            temp_socket.connect((self.server_ip, 5011))
+            temp_socket.connect((self.server_ip, 5001))
             
             temp_socket.sendall(attempted_username.encode())
             
